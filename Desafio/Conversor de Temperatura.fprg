@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Conversor de Temperatura"/>
+        <attribute name="authors" value="juan.gmaraujo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-12 05:26:21 "/>
+        <attribute name="created" value="anVhbi5nbWFyYXVqbztTQU4wNjc0MzkyVzExLTE7MjAyNS0wNS0xMjsiMDQ6MzA6MTIgIjszMzg0"/>
+        <attribute name="edited" value="anVhbi5nbWFyYXVqbztTQU4wNjc0MzkyVzExLTE7MjAyNS0wNS0xMjsiMDU6MjY6MjEgIjsxOzM0OTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="opcao" type="Integer" array="False" size=""/>
+            <declare name="temp, resultado" type="Real" array="False" size=""/>
+            <output expression="&quot;Escolha a convers&#227;o: 1 Celsius para Fahrenheit 2 Fahrenheit para Celsius&quot;" newline="True"/>
+            <input variable="opcao"/>
+            <output expression="&quot;Digite a temperatura&quot;" newline="True"/>
+            <input variable="temp"/>
+            <if expression="opcao == 1">
+                <then>
+                    <assign variable="resultado" expression="temp * 1.8 + 32"/>
+                    <output expression="&quot;Resultado &quot; &amp; resultado &amp; &quot;&#176;F&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="resultado" expression="(temp - 32) * 5 / 9"/>
+                    <output expression="&quot;Resultado &quot; &amp; resultado &amp; &quot;&#176;C&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
