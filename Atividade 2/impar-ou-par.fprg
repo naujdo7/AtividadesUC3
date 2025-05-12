@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="impar-ou-par"/>
+        <attribute name="authors" value="juan.gmaraujo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-12 02:45:57 "/>
+        <attribute name="created" value="anVhbi5nbWFyYXVqbztTQU4wNjc0MzkyVzExLTE7MjAyNS0wNS0xMjsiMDE6NTg6MjMgIjszMzkz"/>
+        <attribute name="edited" value="anVhbi5nbWFyYXVqbztTQU4wNjc0MzkyVzExLTE7MjAyNS0wNS0xMjsiMDI6NDU6NTcgIjsxOzM1MDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="minimo, maximo, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um n&#250;mero&quot;" newline="True"/>
+            <input variable="minimo"/>
+            <output expression="&quot;Digite um n&#250;mero maior&quot;" newline="True"/>
+            <input variable="maximo"/>
+            <assign variable="i" expression="minimo"/>
+            <while expression="i &lt; maximo">
+                <if expression="(i % 2==0)">
+                    <then>
+                        <output expression="i &amp; &quot; - &#233; par&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="i &amp; &quot; - &#233; impar&quot;" newline="True"/>
+                    </else>
+                </if>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+            <output expression="&quot;Digite um n&#250;mero v&#225;lido&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
