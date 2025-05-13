@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Contador"/>
+        <attribute name="authors" value="juan.gmaraujo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-13 05:21:42 "/>
+        <attribute name="created" value="anVhbi5nbWFyYXVqbztTQU4wNjc0MzkyVzExLTE7MjAyNS0wNS0xMzsiMDQ6Mjc6MzQgIjszMzk1"/>
+        <attribute name="edited" value="anVhbi5nbWFyYXVqbztTQU4wNjc0MzkyVzExLTE7MjAyNS0wNS0xMzsiMDU6MjE6NDIgIjsxOzM0OTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="inicio" type="Integer" array="False" size=""/>
+            <declare name="fim" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o primeiro n&#250;mero:&quot;" newline="True"/>
+            <input variable="inicio"/>
+            <output expression="&quot;Digite o segundo n&#250;mero:&quot;" newline="True"/>
+            <input variable="fim"/>
+            <if expression="inicio == fim">
+                <then>
+                    <output expression="&quot;Imposs&#237;vel incrementar ou decrementar!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="inicio &lt; fim">
+                        <then>
+                            <for variable="i" start="inicio" end="fim" direction="inc" step="1">
+                                <if expression="i == inicio">
+                                    <then>
+                                        <output expression="i &amp; &quot; - In&#237;cio&quot;" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="i == fim">
+                                            <then>
+                                                <output expression="i &amp; &quot; - Fim&quot;" newline="True"/>
+                                            </then>
+                                            <else>
+                                                <output expression="i" newline="True"/>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </for>
+                        </then>
+                        <else>
+                            <for variable="i" start="inicio" end="fim" direction="dec" step="1">
+                                <if expression="i == inicio">
+                                    <then>
+                                        <output expression="i &amp; &quot; - In&#237;cio&quot;" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="i == fim">
+                                            <then>
+                                                <output expression="i &amp; &quot; - Fim&quot;" newline="True"/>
+                                            </then>
+                                            <else>
+                                                <output expression="i" newline="True"/>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </for>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
